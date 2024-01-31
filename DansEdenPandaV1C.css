@@ -1,0 +1,370 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#ff4040,#079ab5,#559112,#353d72);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#pandaimg {
+    margin-top: 15%;
+}
+    
+
+.container .icons {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 40px;
+}
+
+.icons img {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+  }
+  
+#icon1:hover {opacity: 1}
+#icon2:hover {opacity: 1}
+#icon3:hover {opacity: 1}
+#icon4:hover {opacity: 1}
+#icon5:hover {opacity: 1}
+#icon6:hover {opacity: 1}
+
+.link {
+    display: flex;
+    justify-content: center;
+    bottom:0px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 40px;
+}
+
+.link img {
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+}
+
+#icongit:hover {opacity: 1}
+#iconlink:hover {opacity: 1}
+
+@media (max-width: 480px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+    }
+    
+}
+
+@media (max-width: 395px) {
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 23px;
+    } 
+}
+
+
+@media (min-height: 667px) and (max-width: 375px) {
+
+    #pandaimg {
+        margin-top: 40%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+    } 
+}
+
+@media (min-height: 720px) and (max-width: 540px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+    } 
+}
+
+@media (min-height: 653px) and (max-width: 280px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 5px;
+    } 
+}
+
+@media (min-height: 914px) and (max-width: 412px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 27px;
+    } 
+}
+
+@media (min-height: 736px) and (max-width: 414px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 27px;
+    } 
+}
+
+@media (min-height: 812px) and (max-width: 375px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+    } 
+}
+
+@media (min-height: 740px) and (max-width: 360px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+    } 
+}
+
+@media (min-height: 930px) and (max-width: 425px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 27px;
+    } 
+}
+
+@media (min-height: 844px) and (max-width: 390px) {
+
+    #pandaimg {
+        margin-top: 50%;
+    }
+
+    .icons button {
+        display: flex;
+        justify-content: center;
+        width: 24px;
+    } 
+}
+
+.music-bg {
+    background: linear-gradient(45deg, #4053ff, #c5c20a, #e764b5, #353d72);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+.music-bg-2 {
+    background: linear-gradient(45deg, #ff4d00, #ff0000, #cf6400, #443737);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+.music-bg-3 {
+    background: linear-gradient(45deg, #333366, #eb4d55, #ff9d76, #f6e1e1);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+.music-bg-4 {
+    background: linear-gradient(45deg, #00d084, #13503a, #477a4b, #ffffff);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+
+}
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+.music-bg-5 {
+    background: linear-gradient(45deg, #1f70ce, #334756, #082032, #381cda);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+.music-bg-6 {
+    background: linear-gradient(45deg, #dbd0c0, #dac6b0, #a7a39d, #f9cf93);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+
+#panda {
+    animation: fade-in 3s;
+}
+
+.icons {
+    animation: fade-in 5s;
+}
+
+.link {
+    animation: fade-in 2s;
+}

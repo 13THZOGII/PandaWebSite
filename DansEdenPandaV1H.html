@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DansEdenPanda</title>
+        <link rel="stylesheet" href="DansEdenPandaV1C.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="Author" content="Kemal DEMİR, kemaldemiir00@gmail.com">
+    </head>
+    <body class="fade-out">
+        <div class="container">
+            <div id="panda" onclick="start();" align="center"><img src="icons/pandadance2.gif" id="pandaimg"></div>
+            <br>
+            <div class="icons">
+                <button type="button" onclick="togglePlayWeekend()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon1.png" alt="icon1" width="55" id="icon1">
+                    <audio id="myAudio" src="weekend (mp3cut.net).mp3"></audio>
+                </button>
+                <button type="button" onclick="togglePlayAvicii()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon2.png" alt="icon2" width="55" id="icon2">
+                    <audio id="myAudio2" src="Avicii - Waiting For Love (cover by Bongo Cat) (mp3cut.net).mp3"></audio>
+                </button>
+                <audio id="audio2" src="Bongo Cat - How You Like That BLACKPINK .mp3"></audio>
+                <button type="button" onclick="togglePlayBadMoew()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon3.png" alt="icon3" width="55" id="icon3">
+                    <audio id="myAudio3" src="Bongo Cat - bad moew (mp3cut.net).mp3"></audio>
+                </button>
+                <button type="button" onclick="togglePlayStay()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon4.png" alt="icon4" width="55" id="icon4">
+                    <audio id="myAudio4" src="The Kid LAROI, Justin Bieber - STAY (cover by Bongo Cat) (mp3cut.net).mp3"></audio>
+                </button>
+                <button type="button" onclick="togglePlayRoar()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon5.png" alt="icon5" width="55" id="icon5">
+                    <audio id="myAudio5" src="Katy Perry - Roar (cover by Bongo Cat) (mp3cut.net).mp3"></audio>
+                </button>
+                <button type="button" onclick="togglePlayAnimals()" tabindex="0" style="border: 0; background: transparent" class="music-button">
+                    <img src="icons/icon6.png" alt="icon6" width="55" id="icon6">
+                    <audio id="myAudio6" src="Maroon 5 - Animals (cover by Bongo Cat) (mp3cut.net).mp3"></audio>
+                </button>
+            </div>
+            <div class="link">
+                <button type="button" style="border: 0; background: transparent"><a href="https://www.linkedin.com/in/kemal-demir-26b658259/"><img src="icons/linkedin.png" alt="linkedin" width="45" id="iconlink"></a></button>
+                <button type="button" style="border: 0; background: transparent"><a href="https://github.com/13THZOGII"><img src="icons/github.png" alt="github" width="45" id="icongit"></a></button>
+            </div>
+        </div>
+        <script>
+            var currentAudio = null;
+
+            function togglePlayWeekend() {
+            var audio = document.getElementById("myAudio");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+            
+            function togglePlayAvicii() {
+            var audio = document.getElementById("myAudio2");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+
+            function togglePlayBadMoew() {
+            var audio = document.getElementById("myAudio3");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+
+            function togglePlayStay() {
+            var audio = document.getElementById("myAudio4");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+
+            function togglePlayRoar() {
+            var audio = document.getElementById("myAudio5");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+
+            function togglePlayAnimals() {
+            var audio = document.getElementById("myAudio6");
+
+            if (audio.paused) {
+                if (currentAudio !== null && currentAudio !== audio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = audio;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+
+            const buttons = document.querySelectorAll('.music-button');
+            const body = document.querySelector('body');
+
+            buttons.forEach(function(button, index) {
+            const music = new Audio(button.dataset.src);
+
+            button.addEventListener('click', function() {
+                if (music.paused) {
+                music.play();
+                body.classList.remove('music-bg-1', 'music-bg-2', 'music-bg-3', 'music-bg-4', 'music-bg-5', 'music-bg-6');
+                body.classList.add('music-bg-' + (index + 1));
+                } else {
+                music.pause();
+                body.classList.remove('music-bg', 'music-bg-1', 'music-bg-2', 'music-bg-3', 'music-bg-4', 'music-bg-5', 'music-bg-6');
+                }
+            });
+
+            music.addEventListener('play', function() {
+                body.classList.add('music-bg');
+            });
+
+            music.addEventListener('pause', function() {
+                body.classList.remove('music-bg', 'music-bg-1', 'music-bg-2', 'music-bg-3', 'music-bg-4', 'music-bg-5', 'music-bg-6');
+            });
+
+            music.addEventListener('ended', function() {
+                body.classList.remove('music-bg', 'music-bg-1', 'music-bg-2', 'music-bg-3', 'music-bg-4', 'music-bg-5', 'music-bg-6');
+            });
+            });
+        </script>
+    </body>
+</html>
